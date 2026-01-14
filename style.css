@@ -116,43 +116,63 @@ body {
   flex-wrap: wrap;
 }
 
-.btn {
+.store-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 14px 28px;
-  border-radius: var(--border-radius);
-  font-size: 16px;
-  font-weight: 600;
+  gap: 12px;
+  padding: 12px 24px;
+  border-radius: 12px;
   text-decoration: none;
   transition: all 0.3s ease;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 180px;
 }
 
-.btn .icon {
-  width: 20px;
-  height: 20px;
+.store-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-.btn-primary {
-  background-color: var(--color-accent-primary);
+.store-btn .store-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.store-btn .store-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.store-btn .store-label {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.store-btn .store-name {
+  font-size: 18px;
   color: var(--color-text-primary);
+  font-weight: 600;
 }
 
-.btn-primary:hover {
-  background-color: #d13a52;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(233, 69, 96, 0.4);
+.store-btn.coming-soon {
+  opacity: 0.6;
+  cursor: default;
 }
 
-.btn-secondary {
-  background-color: var(--color-bg-elevated);
-  color: var(--color-text-primary);
-  border: 2px solid var(--color-accent-secondary);
+.store-btn.coming-soon:hover {
+  transform: none;
+  box-shadow: none;
 }
 
-.btn-secondary:hover {
-  background-color: var(--color-accent-secondary);
-  transform: translateY(-2px);
+.store-btn.coming-soon .store-name {
+  font-size: 14px;
 }
 
 /* Phone Mockup */
