@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Golf - 削れ。まとめろ。最短を狙え。</title>
+  <meta name="description" content="Command Golf は、最小限のコマンドでゴールを目指すプログラミングパズルゲームです。">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="logo">
+          <img src="icon.png" alt="Command Golf" class="logo-icon">
+          <div class="logo-text">
+            <h1>Command Golf</h1>
+            <p class="tagline">MINIMIZE YOUR CODE</p>
+          </div>
+        </div>
+
+        <p class="hero-description">
+          削れ。まとめろ。最短を狙え。<br>
+          最小限のコマンドでゴールを目指す<br>
+          プログラミングパズルゲーム
+        </p>
+
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            App Store
+          </a>
+          <a href="#" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+            </svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="game-preview">
+              <div class="maze-grid">
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell player"></div>
+                <div class="cell"></div>
+                <div class="cell wall"></div>
+                <div class="cell"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell wall"></div>
+                <div class="cell"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell goal"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+                <div class="cell wall"></div>
+              </div>
+              <div class="command-area">
+                <div class="command">FORWARD</div>
+                <div class="command">TURN_R</div>
+                <div class="command loop">LOOP x3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>ゲームの特徴</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+            </svg>
+          </div>
+          <h3>プログラミング的思考</h3>
+          <p>ループや条件分岐を使って、効率的なコードを考える力が身につきます。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+            </svg>
+          </div>
+          <h3>50以上のステージ</h3>
+          <p>チュートリアルから高難度まで、徐々にステップアップできる構成。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M7,7V9H9V7H7M11,7V9H13V7H11M15,7V9H17V7H15M7,11V13H9V11H7M11,11V13H13V11H11M15,11V13H17V11H15M7,15V17H9V15H7M11,15V17H13V15H11M15,15V17H17V15H15Z"/>
+            </svg>
+          </div>
+          <h3>ランダム生成</h3>
+          <p>無限に遊べるランダムマップ生成機能。保存して何度でも挑戦可能。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+          </div>
+          <h3>スコアアタック</h3>
+          <p>より少ないコマンドで星3を目指せ。最適解を見つける楽しさ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Play Section -->
+  <section class="how-to-play">
+    <div class="container">
+      <h2>遊び方</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>コマンドを配置</h3>
+          <p>FORWARD、TURN_L、TURN_R などのコマンドをプログラムエリアに配置します。</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>実行</h3>
+          <p>PLAYボタンを押すと、プレイヤーがコマンド通りに動きます。</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>ゴールを目指す</h3>
+          <p>最小限のコマンドでゴールに到達すれば星3獲得！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commands Section -->
+  <section class="commands">
+    <div class="container">
+      <h2>コマンド一覧</h2>
+
+      <div class="commands-grid">
+        <div class="command-card">
+          <div class="command-name">FORWARD</div>
+          <p>1マス前進</p>
+        </div>
+        <div class="command-card">
+          <div class="command-name">TURN_L</div>
+          <p>左に90°回転</p>
+        </div>
+        <div class="command-card">
+          <div class="command-name">TURN_R</div>
+          <p>右に90°回転</p>
+        </div>
+        <div class="command-card">
+          <div class="command-name">LOOP</div>
+          <p>繰り返し実行</p>
+        </div>
+        <div class="command-card">
+          <div class="command-name">IF WALL</div>
+          <p>壁があれば実行</p>
+        </div>
+        <div class="command-card">
+          <div class="command-name">MARK</div>
+          <p>マークを設置</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="icon.png" alt="Command Golf" class="footer-icon">
+          <span>Command Golf</span>
+        </div>
+        <p class="copyright">&copy; 2024 Command Golf. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
