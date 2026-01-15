@@ -525,6 +525,22 @@ body {
   border-radius: 8px;
 }
 
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-success);
+}
+
 .copyright {
   color: var(--color-text-secondary);
   font-size: 14px;
